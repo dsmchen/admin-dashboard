@@ -1,3 +1,23 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'Inclusive Sans';
+  src: url('assets/fonts/InclusiveSans-Regular.woff2') format('woff2'),
+    url('assets/fonts/InclusiveSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inclusive Sans';
+  src: url('assets/fonts/InclusiveSans-Bold.woff2') format('woff2'),
+    url('assets/fonts/InclusiveSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -69,6 +89,10 @@ h6 {
 
 /* Admin Dashboard */
 
+body {
+  font-family: Inclusive Sans, Arial, Helvetica, sans-serif;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -107,6 +131,14 @@ nav {
   width: 30px;
 }
 
+.link-container ul {
+  display: flex;
+}
+
+.link-container img {
+  width: 50px;
+}
+
 .greeting-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -116,10 +148,6 @@ nav {
   grid-row: span 2;
   width: 100px;
   border-radius: 50%;
-}
-
-.link-container ul {
-  display: flex;
 }
 
 .cta-container ul {
