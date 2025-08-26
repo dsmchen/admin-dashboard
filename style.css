@@ -77,14 +77,86 @@ h6 {
     'nav main main main';
 }
 
+/* Nav */
+
 nav {
   grid-area: nav;
 }
 
-header {
-  grid-area: header;
+.nav-header {
+  display: flex;
 }
+
+.nav-header img {
+  width: 50px;
+}
+
+/* Main Header */
+
+.main-header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.search-container {
+  display: flex;
+}
+
+.search-container img {
+  width: 30px;
+}
+
+.greeting-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.greeting-container img {
+  grid-row: span 2;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.link-container ul {
+  display: flex;
+}
+
+.cta-container ul {
+  display: flex;
+}
+
+/* Main */
 
 main {
   grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+
+.projects-container {
+  grid-column: span 2;
+  grid-row: span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projects-container h2 {
+  grid-column: span 2;
+}
+
+.projects-container .card ul {
+  display: flex;
+}
+
+.trending-container .card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.trending-container .card img {
+  grid-row: span 2;
+  width: 50px;
+  border-radius: 50%;
 }
