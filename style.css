@@ -101,18 +101,39 @@ body {
     'nav main main main';
 }
 
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 /* Nav */
 
 nav {
   grid-area: nav;
+  padding: 20px;
 }
 
 .nav-header {
   display: flex;
+  gap: 10px;
 }
 
 .nav-header img {
   width: 50px;
+}
+
+nav ul {
+  margin-top: 40px;
+}
+
+nav li {
+  display: flex;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+nav li img {
+  padding-right: 10px;
 }
 
 /* Main Header */
