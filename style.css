@@ -220,6 +220,16 @@ nav li img {
   font-weight: bold;
 }
 
+.cta-container button.primary {
+  background-color: #1f883d;
+  color: #fff;
+}
+
+.cta-container button.primary:hover,
+.cta-container button.secondary:hover {
+  box-shadow: 1px 1px 1px #999;
+}
+
 /* Main */
 
 main {
